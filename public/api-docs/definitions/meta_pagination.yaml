@@ -1,0 +1,9 @@
+meta:
+  type: object
+  properties:
+    page:
+      type: integer
+    per_page:
+      type: integer
+    total_page:
+      type: integer

@@ -1,0 +1,13 @@
+404:
+  description: "not found"
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          message:
+            type: string
+      examples:
+        "Unauthorized: Invalid token":
+          value:
+            message: Not found data.

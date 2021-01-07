@@ -1,0 +1,15 @@
+books:
+  type: object
+  properties:
+    id:
+      type: integer
+    title:
+      type: string
+    description:
+      type: string
+    author:
+      type: string
+    quantity:
+      type: integer
+    rent_cost:
+      type: integer

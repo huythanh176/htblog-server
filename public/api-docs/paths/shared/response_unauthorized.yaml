@@ -1,0 +1,16 @@
+401:
+  description: Not authorized!
+  content:
+    application/json:
+      schema:
+        $ref: "../../definitions/common.yaml#/exception_error"
+      examples:
+        when missing token:
+          value:
+            messages:  Missing token!
+        when invalid token:
+          value:
+            messages:  Access denied!. Invalid token supplied.
+        when expired token:
+          value:
+            messages:  Access denied!. Token has expired.

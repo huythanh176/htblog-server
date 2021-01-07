@@ -1,0 +1,5 @@
+exception_error:
+  type: object
+  properties:
+    messages:
+      type: string
