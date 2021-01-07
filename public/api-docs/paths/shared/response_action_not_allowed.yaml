@@ -1,0 +1,28 @@
+403:
+  description: Forbidden
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          success:
+            type: boolean
+            example: false
+          errors:
+            type: array
+            items:
+              type: object
+              properties:
+                code:
+                  type: integer
+                  required: true
+                message:
+                  type: string
+                  required: true
+      examples:
+        "Forbidden: Not allowed":
+          value:
+            success: false
+            errors:
+            - code: 1202
+              message: 

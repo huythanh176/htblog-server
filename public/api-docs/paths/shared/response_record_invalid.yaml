@@ -1,0 +1,16 @@
+422:
+  description: "Record Invalid"
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          message:
+            type: array
+            properties: 
+              title: string
+      examples:
+        "Invalid record":
+          value:
+            message: 
+              title: ["Name cant be blank"]
